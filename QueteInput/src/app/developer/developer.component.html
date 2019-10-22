@@ -2,4 +2,4 @@
 <p>Biographie: <br>
    {{dev.bio}}</p>
 <p>Compétences:</p>
-<app-skill  [skillList]="dev.skills"></app-skill>
+<app-skill  *ngFor="let item of dev.skills" [skillList]="item"></app-skill>
